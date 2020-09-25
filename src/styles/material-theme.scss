@@ -1,7 +1,6 @@
-
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
+@import './component-themes/items-overview.scss';
+@import './component-themes//app-theme.scss';
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -12,28 +11,29 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$whisky-portfolio-primary: mat-palette($mat-indigo);
-$whisky-portfolio-accent: mat-palette($mat-pink, A200, A100, A400);
+$gk-app-primary: mat-palette($mat-teal);
+$gk-app-accent:  mat-palette($mat-green);
 
 // The warn palette is optional (defaults to red).
-$whisky-portfolio-warn: mat-palette($mat-red);
+$gk-app-warn:    mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$whisky-portfolio-theme: mat-light-theme((
+// theming systems such as `color` or `typography`.
+$gk-app-theme: mat-dark-theme((
   color: (
-    primary: $whisky-portfolio-primary,
-    accent: $whisky-portfolio-accent,
-    warn: $whisky-portfolio-warn,
+    primary: $gk-app-primary,
+    accent: $gk-app-accent,
+    warn: $gk-app-warn,  
   )
 ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($whisky-portfolio-theme);
-
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@include mat-core-theme($gk-app-theme);
+@include mat-button-theme($gk-app-theme);
+@include mat-card-theme($gk-app-theme);
+@include mat-progress-spinner-theme($gk-app-theme);
+@include items-overview($gk-app-theme);
+@include items-overview($gk-app-theme);
+@include app-theme($gk-app-theme);

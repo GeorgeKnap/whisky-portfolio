@@ -1,0 +1,10 @@
+<ng-container *ngIf="items$ | async as items; else loading">
+    <gk-item-card *ngFor="let item of items" [item]="item"></gk-item-card>
+</ng-container>
+
+
+<ng-template #loading>
+    <div class="loading-container">
+        <mat-spinner [diameter]="32" [strokeWidth]="1"></mat-spinner>
+    </div>
+</ng-template>
