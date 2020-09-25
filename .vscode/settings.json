@@ -3,6 +3,10 @@
         {
             "name": "feature/init_app",
             "base": "main"
+        },
+        {
+            "name": "feature/firebase_connection",
+            "base": "main"
         }
     ]
 }
