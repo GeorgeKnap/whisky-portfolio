@@ -4,10 +4,10 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../../environments/environment';
-import { MaterialModule } from '../material/material.module';
+import { MaterialModule } from '../material.module';
+import { ItemCardComponent } from './item-card/item-card.component';
 import { ItemsOverviewComponent } from './items-overview/items-overview.component';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
-import { ItemCardComponent } from './item-card/item-card.component';
 
 
 

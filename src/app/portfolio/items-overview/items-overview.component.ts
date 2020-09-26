@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-import { PortfolioItem } from '../item/item.model';
+import { PortfolioItem } from '../../models/item.model';
 
 @Component({
   selector: 'gk-items-overview',

@@ -1,6 +1,6 @@
 <mat-card>
     <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
+        <div mat-card-avatar class="distillery-avatar" [style.background-image]="distilleryIcon$ | async"></div>
         <mat-card-title>{{item.name}}</mat-card-title>
         <mat-card-subtitle *ngIf="item.realPrice && item.currency; else boughtPrice">{{item.realPrice}}
             {{item.currency}}</mat-card-subtitle>

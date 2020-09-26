@@ -1,3 +1,5 @@
+import { Distilleries } from './distilleries.enum';
+
 export interface PortfolioItem {
     name: string;
     boughtOn: string;
@@ -7,4 +9,5 @@ export interface PortfolioItem {
     realPrice: number;
     description: string;
     photo: string;
+    distillery: Distilleries;
 }
