@@ -1,5 +1,6 @@
 export enum Distilleries {
     Ardbeg = 'Ardbeg',
     Laphroaig = 'Laphroaig',
-    Dalwhinnie = 'Dalwhinnie'
+    Dalwhinnie = 'Dalwhinnie',
+    Balvenie = 'Balvenie'
 }
